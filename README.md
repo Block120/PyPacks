@@ -4,31 +4,37 @@
 To install PyPacks it is recommended to create a virtual environment first
 
 ### Windows
+
 ```sh
 python -m venv .venv
 ```
+
 Once the virtual environment is created then activate it
+
 ```sh
 .venv\\Scripts\\activate.bat
 ```
-Finally, you can install PyPacks
+
+### MacOS
+
+```sh
+python3 -m venv .venv
+```
+
+Once the virtual environment is created then activate it
+
+```sh
+source venv/bin/activate
+```
+
+### Before you can use PyPacks you need to install it
+
 ```sh
 pip install pypacks
 ```
 
-### MacOS
-```sh
-python3 -m venv .venv
-```
-Once the virtual environment is created then activate it
-```sh
-source venv/bin/activate
-```
-Finally, you can install PyPacks
-```sh
-pip install pypacks
-```
 ## Usage
+
 Here is an example of usage for PyPacks
 ```python
 import pypacks
