@@ -1,0 +1,8 @@
+import math
+
+def example:circle:
+    for radius in range(100):
+        angle = 2 * math.pi * radius / 100
+        x = radius * math.sin(angle)
+        z = radius * math.cos(angle)
+        particle flame ~x ~ ~z

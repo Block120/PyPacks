@@ -14,25 +14,20 @@ Finally, you can install PyPacks
 pip install pypacks
 ```
 ## Usage
-Here is an example of usage for PyPacks
+Here is an example of usage for PyPacks:
 ```python
-import pypacks
+import math
 
-# Create the PyPack
-example = pypacks.PyPack("example", "Example Pack")
-
-# Define a function in the PyPack that says "Hello World!"
-hello = pypacks.Function("hello")
-hello.add_command("say", "Hello")
-hello.add_command("say", "World!")
-hello.attach(example)
-
-# Define another function in the PyPack
-yello = pypacks.Function("yello")
-yello.attach(example)
-
-# Build the PyPack for Bedrock and Java
-example.build(pypacks.PyPackType.JAVA, "Example")
-example.build(pypacks.PyPackType.BEDROCK, "Example")
+def example:circle:
+    for radius in range(100):
+        angle = 2 * math.pi * radius / 100
+        x = radius * math.sin(angle)
+        z = radius * math.cos(angle)
+        particle flame ~x ~ ~z
 
 ```
+To build this run this command:
+```sh
+pypacks example.pxs
+```
+This will detect what versions of minecraft are installed and build it for those versions
