@@ -24,7 +24,7 @@ python3 -m venv .venv
 Once the virtual environment is created then activate it
 
 ```sh
-source venv/bin/activate
+source .venv/bin/activate
 ```
 
 ### Before you can use PyPacks you need to install it
