@@ -36,18 +36,16 @@ pip install pypacks
 ## Usage
 Here is an example of usage for PyPacks:
 ```python
-import math
+import pypacks
 
-def example:circle:
-    for radius in range(100):
-        angle = 2 * math.pi * radius / 100
-        x = radius * math.sin(angle)
-        z = radius * math.cos(angle)
-        particle flame ~x ~ ~z
+@pypacks.mcfunction("example:greet")
+def greet():
+    "Say 'Hello, World!' in the game chat."
+    pypacks.say("Hello, World!")
 
 ```
 To build this run this command:
 ```sh
-pypacks example.pxs
+python example.py
 ```
 This will detect what versions of minecraft are installed and build it for those versions
